@@ -1,0 +1,35 @@
+{
+  "version": "2.0",
+  "dataset_id": "on003766",
+  "source": "openneuro",
+  "source_id": "ds003766",
+  "title": "A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking",
+  "authors": {
+    "Kun Chen": {},
+    "Ruien Wang": {},
+    "Jiamin Huang": {},
+    "Fei Gao": {},
+    "Zhen Yuan": {},
+    "Yanyan Qi": {},
+    "Haiyan Wu": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds003766.v2.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.6.0",
+  "recording_modality": [
+    "beh",
+    "eeg"
+  ],
+  "datatypes": [
+    "beh",
+    "eeg"
+  ]
+}
