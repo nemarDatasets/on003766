@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking",
+  "description": "This dataset combines high-density electroencephalography (128-channel HD-EEG) and mouse-tracking to examine dynamic decision-making processes in the human brain. Collected from 31 adults (ages 18-33), it includes resting-state and task-related EEG data acquired during food preference choices and semantic judgment tasks. The resource provides both raw and preprocessed data suitable for investigating neural correlates of binary choice behavior and semantic processing.",
+  "methods_description": "EEG data were acquired using a 128-channel cap based on the standard 10/20 system with an Electrical Geodesics Inc (EGI) system at a sampling rate of 1000 Hz, with the E129 (Cz) electrode as reference and electrode impedances maintained below 50 kΩ. Participants performed food preference choice and semantic judgment tasks while mouse-tracking was recorded concurrently. Preprocessed data were generated using EEGLAB.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,6 +19,30 @@
     },
     "Haiyan Wu": {}
   },
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Decision Making",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
+    },
+    {
+      "term": "mouse-tracking"
+    },
+    {
+      "term": "resting state"
+    },
+    {
+      "term": "semantic judgment"
+    },
+    {
+      "term": "food preference"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003766.v2.0.3",
@@ -40,11 +66,11 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "eeg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
     "163.8 GB (1898 files)"
   ],
@@ -70,35 +96,6 @@
     ".txt",
     ".xml",
     ".yml"
-  ],
-  "description": "This dataset combines high-density electroencephalography (128-channel HD-EEG) and mouse-tracking to examine dynamic decision-making processes in the human brain. Collected from 31 adults (ages 18-33), it includes resting-state and task-related EEG data acquired during food preference choices and semantic judgment tasks. The resource provides both raw and preprocessed EEG data with synchronized behavioral measures, enabling investigation of neural correlates underlying binary choice decisions.",
-  "methods_description": "EEG data were acquired using a 128-channel cap based on the standard 10/20 system with an Electrical Geodesics Inc (EGI) system at a sampling rate of 1000 Hz, with the E129 (Cz) electrode as reference and electrode impedances maintained below 50 kΩ. Participants performed food preference choice and semantic judgment tasks while mouse-tracking was recorded concurrently. Preprocessing was performed using EEGLAB.",
-  "keywords": [
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Decision Making",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
-    },
-    {
-      "term": "mouse-tracking"
-    },
-    {
-      "term": "resting state"
-    },
-    {
-      "term": "semantic judgment"
-    },
-    {
-      "term": "food preference"
-    },
-    {
-      "term": "high-density EEG"
-    }
   ],
   "source_hash": "395cf12c385729d2e4db4907849b211eb7f93e5a7d1769a03d3e440fcd0bf17b"
 }
