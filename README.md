@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003766-blue)](https://doi.org/10.82901/nemar.on003766)
+
 # A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking
 
 ## Description
