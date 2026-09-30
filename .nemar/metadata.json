@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "A resource for assessing dynamic binary choices in the adult brain using EEG and mouse-tracking",
-  "description": "This dataset combines high-density electroencephalography (128-channel HD-EEG) and mouse-tracking to examine dynamic decision-making processes in the human brain. Collected from 31 adults (ages 18-33), it includes resting-state and task-related EEG data acquired during food preference choices and semantic judgment tasks. The resource provides both raw and preprocessed EEG data with synchronized behavioral measures, enabling investigation of neural correlates underlying binary choice decisions.",
-  "methods_description": "EEG data were acquired using a 128-channel cap based on the standard 10/20 system with an Electrical Geodesics Inc (EGI) system at a sampling rate of 1000 Hz, with the E129 (Cz) electrode as reference and electrode impedances maintained below 50 kΩ. Participants performed food preference choice and semantic judgment tasks while mouse-tracking was recorded concurrently. Preprocessing was performed using EEGLAB.",
+  "description": "This dataset provides high-density (128-channel) EEG and mouse-tracking data from 31 adults aged 18-33, collected in 2020. It includes resting-state recordings and task recordings from food preference choices and semantic judgments. The resource is intended for studying the dynamic decision processes underlying binary choices in the human brain.",
+  "methods_description": "EEG was recorded with a 128-channel EGI system (10/20-based cap) at a 1000 Hz sampling rate, with E129 (Cz) as reference and electrode impedances kept below 50 kohm. Participants completed resting-state recordings and two mouse-tracking tasks (food preference choices and semantic judgments). The dataset includes raw .mff files, BIDS-formatted .set files, PsychoPy stimulus scripts, and EEGLAB-preprocessed continuous data.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -31,19 +31,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
     },
     {
-      "term": "Mouse-tracking"
+      "term": "mouse-tracking"
     },
     {
-      "term": "Resting state"
+      "term": "resting state"
     },
     {
-      "term": "Food preferences"
+      "term": "preference choice"
     },
     {
-      "term": "Semantic judgment"
-    },
-    {
-      "term": "Binary choice"
+      "term": "semantic judgment"
     }
   ],
   "related_identifiers": [
@@ -55,7 +52,7 @@
     {
       "identifier": "10.1038/s41597-022-01538-5",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on003766",
@@ -66,6 +63,26 @@
       "identifier": "https://nemar.org/dataset/on003766",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "National Natural Science Foundation of China",
+      "award_number": "81871504"
+    },
+    {
+      "funder_name": "National Natural Science Foundation of China",
+      "award_number": "82071935"
     }
   ],
   "resource_type_general": "Dataset",
@@ -75,7 +92,7 @@
     "eeg"
   ],
   "sizes": [
-    "163.8 GB (1898 files)"
+    "153 GB (1898 files)"
   ],
   "formats": [
     ".bin",
@@ -99,16 +116,6 @@
     ".txt",
     ".xml",
     ".yml"
-  ],
-  "funding_references": [
-    {
-      "funder_name": "National Natural Science Foundation of China",
-      "award_number": "81871504"
-    },
-    {
-      "funder_name": "National Natural Science Foundation of China",
-      "award_number": "82071935"
-    }
   ],
   "source_hash": "395cf12c385729d2e4db4907849b211eb7f93e5a7d1769a03d3e440fcd0bf17b"
 }
